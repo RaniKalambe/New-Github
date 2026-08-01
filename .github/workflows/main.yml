@@ -8,5 +8,5 @@ jobs:
    runs-on:  ubuntu-latest
 
    steps:
-    name: greeting
+    name: Greetings
     run: echo " hello from apun"

@@ -1,15 +1,13 @@
 name: Rani
-on: 
- push: 
-  branches: [main]
+
+on:
+  push:
+    branches: [main]
 
 jobs:
-  build:
-  runs-on:  ubuntu-latest
+  demo:
+    runs-on: ubuntu-latest
 
-  steps:
-    name: checkout code
-    uses: actions/checkout@v4
-
-    name: Run a command
-    run: echo " hello from apun"
+    steps:
+      - name: Greetings
+        run: echo "hello from apun"
